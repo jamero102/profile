@@ -101,9 +101,10 @@ h2 {
 }
 
 .gallery-pic {
-  width: 50%;
+  width: 20%;
   border: 5px solid white;
   opacity: 0.8;
+  display: inline-block;
 }
 
 @media (max-width: 960px) {
