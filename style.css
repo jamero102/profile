@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda:400,700|Montserrat:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 
 html {
   background: url(images/iceberg.jpg) no-repeat center center fixed;
@@ -9,14 +11,16 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  margin: 0 auto;
 }
 
 h1 {
   color: #759EB9;
-  font-family: 'Merienda', cursive;;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 p {
@@ -24,8 +28,7 @@ p {
 }
 
 #profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 20%;
   border-radius: 50%;
   opacity: 0.7;
 }
@@ -47,6 +50,9 @@ h2 {
   font-size: 24px;
   font-weight: normal;
 }
+.container {
+  margin: 10 auto;
+}
 
 .header-card {
   margin: 0 auto;
@@ -61,7 +67,7 @@ h2 {
 .footer-card {
   margin: 0 auto;
   background-color: rgba(260, 260, 260, 0.65);
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 8px;
   text-align: center;
   margin: 10px auto;
@@ -94,22 +100,34 @@ h2 {
   display: inline-block;
 }
 
-.photo-list {
-  width: 25%;
+.gallery-pic {
+  width: 50%;
+  border: 5px solid white;
+  opacity: 0.8;
 }
 
 @media (max-width: 960px) {
   .container {
     width: 700px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 720px) {
   .container {
     width: 500px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 540px) {
   .container {
     width: 300px;
+    margin: 0 auto;
+  }
+  .btn-blue {
+    font-size: 12px;
+  }
+  .social-icon {
+    font-size: 24px;
+    padding: 0 10px;
   }
 }
