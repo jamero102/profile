@@ -2,25 +2,47 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Profile</title>
 </head>
 <body>
-  <div class="container">
     <div class="header-card">
       <h1>Janie Amero</h1>
-        <img id="profile-pic" src="images/JA2.png" alt="profile picture">
-        <p>I love Ruby 💎, web-development, photography 📷, polo 🏇, and traveling ✈. I am learning to code at Le Wagon so that I can create amazing things 👩‍💻.</p>
+      <img id="profile-pic" src="images/JA2.png" alt="profile picture">
+    </div>
+  <div class="container">
+    <div class="content-card">
+      <h2>About Me</h2>
+      <p>I love Ruby 💎, web-development, photography 📷, polo 🏇, and traveling ✈. I am learning to code at Le Wagon so that I can create amazing things 👩‍💻.</p>
       <a class="btn-blue" href="mailto: janie.amero@gmail.com" target="_blank">Say hi!</a>
     </div>
-    <div class = "header-card">
+    <div class = "content-card">
       <h2>Photography 📷</h2>
       <p>I love to take photographs when I travel, and at home you can often find me photographing my dog, Neptune. Check out his <a href=https://www.instagram.com/neptune_pup target="_blank" />Instagram!</a></p>
-      <img class="gallery-pic" src="images/IMG_5306.jpg" alt="neptune">
-      <img class="gallery-pic" src="images/sunset.jpg" alt="neptune">
-      <img class="gallery-pic" src="images/DSC_2915.jpg" alt="neptune">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/sunset.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/DSC_2915.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/IMG_5306.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
     <div class="footer-card">
       <h2>Follow Me</h2>
@@ -44,4 +66,8 @@
     </div>
   </div>
 </body>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
 </html>
